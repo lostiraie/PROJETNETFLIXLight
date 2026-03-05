@@ -1,12 +1,64 @@
-body {
-    background-color: #141414;
-    font-family: Century Gothic;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
+body {
+    background-color: #141414;
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* Titres  */
 h1 {
-    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    color: #e50914;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 h2 {
-    color: red;
+    font-size: 28px;
+    font-weight: normal;
+    color: #fff;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+/*  Boutons d’action  */
+button {
+    background-color: #e50914;
+    border: none;
+    padding: 12px 30px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #f6121d;
+    transform: scale(1.05);
+}
+
+/*  Responsive */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    button {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
 }
