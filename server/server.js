@@ -24,7 +24,7 @@ const openBrowser = async (url) => {
 serveur.listen(3000, () => {
     console.log(`Server lancé sur http://localhost:${3000}`);
 
-// ouvrir le navigateur avec import dynamique donc dependance "npm install open"
+// ouvrir le navigateur avec import dynamique avec l' dependance "npm install open"
     openBrowser(`http://localhost:${3000}`)
 });
 
